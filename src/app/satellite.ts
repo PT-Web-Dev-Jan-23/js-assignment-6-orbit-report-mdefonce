@@ -14,11 +14,9 @@ export class Satellite {
 		this.operational = operational;
    }
 	
-	isSpaceDebris(satellite: object): boolean {
-		if(satellite['type'] === 'Space Debris') {
-		return true;
-		} else {return false;}
-   }
+	isSpaceDebris(): boolean {
+	return this.type === 'Space Debris'
+	}
 
 }
 
